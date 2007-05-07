@@ -1,0 +1,5 @@
+category: Xfce
+requires: glib2-doc gtk2-x11-doc
+external-source: libxfcegui4
+sdesc: "Xfce4 GUI library (API documentation)"
+ldesc: "Xfce4 GUI library"
