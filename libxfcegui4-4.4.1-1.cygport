@@ -1,9 +1,0 @@
-inherit xfce4
-
-DESCRIPTION="Xfce GUI library"
-
-PKG_NAMES="${PN} ${PN}-devel ${PN}-doc"
-PKG_HINTS="setup devel doc"
-PKG_CONTENTS[0]='--exclude=gtk-doc etc/ usr/bin/ usr/share/'
-PKG_CONTENTS[1]='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
-PKG_CONTENTS[2]='usr/share/gtk-doc/'

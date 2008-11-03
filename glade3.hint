@@ -1,0 +1,5 @@
+category: Gnome Devel
+requires: cygwin glib2 gtk2-x11 libxfcegui4
+external-source: libxfcegui4
+sdesc: "Glade-3 Xfce4 plugin"
+ldesc: "Xfce4 GUI library"

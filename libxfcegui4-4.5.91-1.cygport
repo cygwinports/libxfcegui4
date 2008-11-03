@@ -1,0 +1,11 @@
+inherit xfce4
+
+DESCRIPTION="Xfce GUI library"
+
+PKG_NAMES="${PN} ${PN}-devel glade3-xfce4"
+PKG_HINTS="setup devel glade3"
+libxfcegui4_CONTENTS="etc/ usr/bin/ usr/lib/libglade/ usr/share/doc/
+                      usr/share/icons/ usr/share/locale/"
+libxfcegui4_devel_CONTENTS="usr/include/ usr/lib/libxfcegui4.*
+                            usr/lib/pkgconfig/ usr/share/gtk-doc/"
+glade3_xfce4_CONTENTS="usr/lib/glade3/ usr/share/glade3/"

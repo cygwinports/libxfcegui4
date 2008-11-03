@@ -1,5 +1,5 @@
-category: Xfce
-requires: cygwin atk-devel glib2-devel gtk2-x11-devel libICE-devel libSM-devel libX11-devel gettext libxfce4util-devel pango-devel startup-notification
+category: Gnome
+requires: cygwin atk-devel glib2-devel gtk2-x11-devel libICE-devel libSM-devel libX11-devel gettext libxfce4util-devel pango-devel startup-notification-devel libxfcegui4
 external-source: libxfcegui4
 sdesc: "Xfce4 GUI library (development)"
 ldesc: "Xfce4 GUI library"

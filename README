@@ -3,33 +3,35 @@ libxfcegui4
 Xfce4 GUI library
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  atk-1.12.4-1
-  gdk-pixbuf2-2.10.11-1
-  glib2-2.12.11-1
-  gtk2-x11-2.10.11-1
-  libICE6-1.0.2-1
-  libSM6-1.0.2-1
-  libX11_6-1.1.1-1
-  libintl8-0.15-1
-  libxfce4util-4.4.1-1
-  pango-1.14.10-1
-  startup-notification-0.8-1
+  atk-1.22.0-1
+  cygwin-1.5.25-15
+  gdk-pixbuf2-2.12.12-1
+  glib2-2.16.6-1
+  gtk2-x11-2.12.12-1
+  libglade2-2.6.3-1
+  libICE6-1.0.4-2
+  libintl8-0.17-1
+  libSM6-1.1.0-1
+  libX11_6-1.1.5-1
+  libxfce4util-4.5.91-1
+  pango-1.20.5-1
+  startup-notification-0.9-1
+(glade3-xfce4)
+  glade3-3.4.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.1-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-1
+  binutils-20080624-2
+  cygport-0.4.2-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
-  xfce4-dev-tools-4.4.0-1
+  xfce4-dev-tools-4.5.91-1
 
 Canonical website:
   http://www.xfce.org/
@@ -40,24 +42,98 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libxfcegui4-4.4.1-X-src.tar.bz2
+  unpack libxfcegui4-4.5.91-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libxfcegui4-4.4.1-X.cygport all
+  cygport ./libxfcegui4-4.5.91-X.cygport all
 
 This will create:
-  /usr/src/libxfcegui4-4.4.1-X-src.tar.bz2
-  /usr/src/libxfcegui4-4.4.1-X.tar.bz2
-  /usr/src/libxfcegui4-devel-4.4.1-X.tar.bz2
-  /usr/src/libxfcegui4-doc-4.4.1-X.tar.bz2
+  /usr/src/glade3-xfce4-4.5.91-X.tar.bz2
+  /usr/src/libxfcegui4-4.5.91-X-src.tar.bz2
+  /usr/src/libxfcegui4-4.5.91-X.tar.bz2
+  /usr/src/libxfcegui4-devel-4.5.91-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(libxfcegui4)
   /etc/postinstall/libxfcegui4.sh
   /usr/bin/cygxfcegui4-4.dll
+  /usr/share/doc/libxfcegui4-4.5.91/AUTHORS
+  /usr/share/doc/libxfcegui4-4.5.91/COPYING
+  /usr/share/doc/libxfcegui4-4.5.91/ChangeLog
+  /usr/share/doc/libxfcegui4-4.5.91/INSTALL
+  /usr/share/doc/libxfcegui4-4.5.91/NEWS
+  /usr/share/doc/libxfcegui4-4.5.91/README
+  /usr/share/icons/hicolor/48x48/apps/xfce-edit.png
+  /usr/share/icons/hicolor/48x48/apps/xfce-filemanager.png
+  /usr/share/icons/hicolor/48x48/apps/xfce-games.png
+  /usr/share/icons/hicolor/48x48/apps/xfce-graphics.png
+  /usr/share/icons/hicolor/48x48/apps/xfce-internet.png
+  /usr/share/icons/hicolor/48x48/apps/xfce-man.png
+  /usr/share/icons/hicolor/48x48/apps/xfce-multimedia.png
+  /usr/share/icons/hicolor/48x48/apps/xfce-printer.png
+  /usr/share/icons/hicolor/48x48/apps/xfce-schedule.png
+  /usr/share/icons/hicolor/48x48/apps/xfce-sound.png
+  /usr/share/icons/hicolor/48x48/apps/xfce-terminal.png
+  /usr/share/icons/hicolor/48x48/apps/xfce-unknown.png
+  /usr/share/icons/hicolor/48x48/apps/xfce-utils.png
+  /usr/share/icons/hicolor/scalable/apps/xfce-filemanager.svg
+  /usr/share/locale/am/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/ar/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/be/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/ca/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/cs/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/cy/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/da/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/de/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/dz/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/el/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/eo/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/es/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/et/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/eu/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/fa/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/fi/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/fr/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/gl/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/gu/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/he/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/hu/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/hy/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/id/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/it/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/ja/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/ka/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/ko/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/lt/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/lv/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/mk/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/mr/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/nb_NO/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/nl/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/pa/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/pl/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/pt_PT/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/ro/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/ru/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/si/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/sk/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/sq/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/sv/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/ta/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/tr/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/uk/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/ur/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/libxfcegui4.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/libxfcegui4.mo
+
+(libxfcegui4-devel)
   /usr/include/xfce4/libxfcegui4/dialogs.h
   /usr/include/xfce4/libxfcegui4/gtk_style.h
   /usr/include/xfce4/libxfcegui4/gtktoxevent.h
@@ -69,7 +145,6 @@ Files included in the binary package:
   /usr/include/xfce4/libxfcegui4/netk-application.h
   /usr/include/xfce4/libxfcegui4/netk-class-group.h
   /usr/include/xfce4/libxfcegui4/netk-enum-types.h
-  /usr/include/xfce4/libxfcegui4/netk-marshal.h
   /usr/include/xfce4/libxfcegui4/netk-pager.h
   /usr/include/xfce4/libxfcegui4/netk-screen.h
   /usr/include/xfce4/libxfcegui4/netk-tasklist.h
@@ -98,23 +173,17 @@ Files included in the binary package:
   /usr/include/xfce4/libxfcegui4/xfce_decortoggle.h
   /usr/include/xfce4/libxfcegui4/xfce_framebox.h
   /usr/include/xfce4/libxfcegui4/xfce_iconbutton.h
-  /usr/include/xfce4/libxfcegui4/xfce_marshal.h
   /usr/include/xfce4/libxfcegui4/xfce_menubutton.h
   /usr/include/xfce4/libxfcegui4/xfce_movehandler.h
   /usr/include/xfce4/libxfcegui4/xfce_scaled_image.h
   /usr/include/xfce4/libxfcegui4/xfce_systemtray.h
   /usr/include/xfce4/libxfcegui4/xfce_togglebutton.h
   /usr/include/xfce4/libxfcegui4/xinerama.h
+  /usr/lib/libglade/2.0/cygxfce4.dll
+  /usr/lib/libglade/2.0/libxfce4.la
   /usr/lib/libxfcegui4.dll.a
   /usr/lib/libxfcegui4.la
   /usr/lib/pkgconfig/libxfcegui4-1.0.pc
-  /usr/share/doc/Cygwin/libxfcegui4-4.4.1.README
-  /usr/share/doc/libxfcegui4-4.4.1/AUTHORS
-  /usr/share/doc/libxfcegui4-4.4.1/COPYING
-  /usr/share/doc/libxfcegui4-4.4.1/ChangeLog
-  /usr/share/doc/libxfcegui4-4.4.1/INSTALL
-  /usr/share/doc/libxfcegui4-4.4.1/NEWS
-  /usr/share/doc/libxfcegui4-4.4.1/README
   /usr/share/gtk-doc/html/libxfcegui4/XfceAboutDialog.html
   /usr/share/gtk-doc/html/libxfcegui4/XfceAppMenuItem.html
   /usr/share/gtk-doc/html/libxfcegui4/XfceFramebox.html
@@ -140,67 +209,29 @@ Files included in the binary package:
   /usr/share/gtk-doc/html/libxfcegui4/right.png
   /usr/share/gtk-doc/html/libxfcegui4/style.css
   /usr/share/gtk-doc/html/libxfcegui4/up.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-edit.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-filemanager.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-games.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-graphics.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-internet.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-man.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-multimedia.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-printer.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-schedule.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-sound.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-terminal.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-unknown.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-utils.png
-  /usr/share/icons/hicolor/scalable/apps/xfce-filemanager.svg
-  /usr/share/locale/ar/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/be/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/bn_IN/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/ca/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/cs/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/cy/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/de/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/dz/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/el/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/en_GB/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/eo/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/es/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/et/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/eu/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/fa/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/fi/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/fr/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/gl/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/gu/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/he/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/hu/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/hy/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/it/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/ja/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/ka/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/ko/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/lt/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/mk/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/mr/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/nl/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/pa/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/pl/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/ro/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/ru/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/sk/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/sq/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/sv/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/ta/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/tr/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/uk/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/libxfcegui4.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/libxfcegui4.mo
+
+(glade3-xfce4)
+  /usr/lib/glade3/modules/cyggladexfce4.dll
+  /usr/lib/glade3/modules/libgladexfce4.la
+  /usr/share/glade3/catalogs/xfce4.xml
+  /usr/share/glade3/catalogs/xfce4.xml.in
+  /usr/share/glade3/pixmaps/hicolor/16x16/actions/widget-xfce4-xfce-app-menu-item.png
+  /usr/share/glade3/pixmaps/hicolor/16x16/actions/widget-xfce4-xfce-heading.png
+  /usr/share/glade3/pixmaps/hicolor/16x16/actions/widget-xfce4-xfce-movehandler.png
+  /usr/share/glade3/pixmaps/hicolor/16x16/actions/widget-xfce4-xfce-scaled-image.png
+  /usr/share/glade3/pixmaps/hicolor/16x16/actions/widget-xfce4-xfce-titled-dialog.png
+  /usr/share/glade3/pixmaps/hicolor/22x22/actions/widget-xfce4-xfce-app-menu-item.png
+  /usr/share/glade3/pixmaps/hicolor/22x22/actions/widget-xfce4-xfce-heading.png
+  /usr/share/glade3/pixmaps/hicolor/22x22/actions/widget-xfce4-xfce-movehandler.png
+  /usr/share/glade3/pixmaps/hicolor/22x22/actions/widget-xfce4-xfce-scaled-image.png
+  /usr/share/glade3/pixmaps/hicolor/22x22/actions/widget-xfce4-xfce-titled-dialog.png
 
 ------------------
 
 Port Notes:
+
+----- version 4.5.91-1 -----
+Version bump for 4.5-beta2.
 
 ----- version 4.4.1-1 -----
 Initial release of Xfce 4.4 for Cygwin.
