@@ -1,0 +1,16 @@
+inherit xfce4
+
+DESCRIPTION="Xfce GUI library"
+
+PATCH_URI="4.5.92-glade3-module.patch"
+
+PKG_NAMES="${PN} ${PN}_4 ${PN}-devel libxfce4kbd-private4 libxfce4kbd-private-devel glade3-xfce4"
+libxfcegui4_4_CONTENTS="etc/postinstall/ usr/bin/cygxfcegui4-4.dll usr/lib/libglade/
+                        usr/share/doc/ usr/share/icons/ usr/share/locale/"
+libxfcegui4_devel_CONTENTS="usr/include/xfce4/libxfcegui4/ usr/lib/libxfcegui4.*
+                            usr/lib/pkgconfig/libxfcegui4-1.0.pc usr/share/gtk-doc/"
+libxfce4kbd_private4_CONTENTS="etc/xdg/ usr/bin/cygxfce4kbd-private-4.dll"
+libxfce4kbd_private_devel_CONTENTS="usr/include/xfce4/libxfce4kbd-private/
+                                    usr/lib/libxfce4kbd-private.*
+                                    usr/lib/pkgconfig/libxfce4kbd-private-1.0.pc"
+glade3_xfce4_CONTENTS="usr/lib/glade3/ usr/share/glade3/"

@@ -1,4 +1,0 @@
-category: Xfce
-requires: cygwin atk glib2 gtk2-x11 libICE6 libSM6 libX11_6 libintl8 libxfce4util pango startup-notification
-sdesc: "Xfce4 GUI library (runtime)"
-ldesc: "Xfce4 GUI library"

@@ -1,0 +1,30 @@
+--- origsrc/libxfcegui4-4.5.92/glade/Makefile.am	2008-09-05 18:06:27.000000000 -0500
++++ src/libxfcegui4-4.5.92/glade/Makefile.am	2008-12-25 05:09:15.428000000 -0600
+@@ -20,6 +20,7 @@
+ 
+ libgladexfce4_la_CFLAGS = \
+ 	-I$(top_srcdir) \
++	$(LIBXFCE4UTIL_CFLAGS) \
+ 	$(GLADEUI_CFLAGS) \
+ 	$(PLATFORM_CFLAGS)
+ 
+--- origsrc/libxfcegui4-4.5.92/glade/glade-xfce4.c	2008-09-05 18:06:27.000000000 -0500
++++ src/libxfcegui4-4.5.92/glade/glade-xfce4.c	2008-12-25 05:10:55.256125000 -0600
+@@ -29,10 +29,17 @@
+ #endif
+ 
+ #include <gtk/gtk.h>
++#include "libxfcegui4/libxfcegui4.h"
+ 
+ #include <gladeui/glade.h>
+ 
+ void
++gotta_love_windows(null)
++{
++	GtkWidget *dialog = xfce_titled_dialog_new();
++}
++
++void
+ glade_xfce_titled_dialog_post_create(GladeWidgetAdaptor *adaptor,
+                                      GObject *object, 
+                                      GladeCreateReason reason)

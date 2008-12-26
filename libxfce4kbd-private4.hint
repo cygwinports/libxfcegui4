@@ -1,0 +1,5 @@
+category: Xfce
+requires: cygwin libglib2.0_0 libgtk2.0_0 libX11_6 libxfcegui4_4 libxfconf0_2
+external-source: libxfcegui4
+sdesc: "Xfce4 keyboard library (runtime)"
+ldesc: "Xfce4 GUI library"
