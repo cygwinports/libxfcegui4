@@ -15,8 +15,8 @@ Runtime requirements:
   libSM6-1.1.0-1
   libstartup-notification1_0-0.9-2
   libX11_6-1.1.5-2
-  libxfce4util4-4.5.99.1-1
-  libxfconf0_2-4.5.99.1-1
+  libxfce4util4-4.6.0-1
+  libxfconf0_2-4.6.0-1
 (glade3-xfce4)
   glade3-3.4.5-1
 
@@ -32,7 +32,7 @@ Build requirements:
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
-  xfce4-dev-tools-4.5.99.1-1
+  xfce4-dev-tools-4.6.0-1
 
 Canonical website:
   http://www.xfce.org/
@@ -43,19 +43,19 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libxfcegui4-4.5.99.1-X-src.tar.bz2
+  unpack libxfcegui4-4.6.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libxfcegui4-4.5.99.1-X.cygport all
+  cygport ./libxfcegui4-4.6.0-X.cygport all
 
 This will create:
-  /usr/src/glade3-xfce4-4.5.99.1-X.tar.bz2
-  /usr/src/libxfcegui4-4.5.99.1-X-src.tar.bz2
-  /usr/src/libxfcegui4-devel-4.5.99.1-X.tar.bz2
-  /usr/src/libxfcegui4_4-4.5.99.1-X.tar.bz2
-  /usr/src/libxfce4kbd-private-devel-4.5.99.1-X.tar.bz2
-  /usr/src/libxfce4kbd-private4-4.5.99.1-X.tar.bz2
+  /usr/src/glade3-xfce4-4.6.0-X.tar.bz2
+  /usr/src/libxfcegui4-4.6.0-X-src.tar.bz2
+  /usr/src/libxfcegui4-devel-4.6.0-X.tar.bz2
+  /usr/src/libxfcegui4_4-4.6.0-X.tar.bz2
+  /usr/src/libxfce4kbd-private-devel-4.6.0-X.tar.bz2
+  /usr/src/libxfce4kbd-private5-4.6.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -66,12 +66,12 @@ Files included in the binary packages:
   /usr/bin/cygxfcegui4-4.dll
   /usr/lib/libglade/2.0/cygxfce4.dll
   /usr/lib/libglade/2.0/libxfce4.la
-  /usr/share/doc/libxfcegui4-4.5.99.1/AUTHORS
-  /usr/share/doc/libxfcegui4-4.5.99.1/COPYING
-  /usr/share/doc/libxfcegui4-4.5.99.1/ChangeLog
-  /usr/share/doc/libxfcegui4-4.5.99.1/INSTALL
-  /usr/share/doc/libxfcegui4-4.5.99.1/NEWS
-  /usr/share/doc/libxfcegui4-4.5.99.1/README
+  /usr/share/doc/libxfcegui4-4.6.0/AUTHORS
+  /usr/share/doc/libxfcegui4-4.6.0/COPYING
+  /usr/share/doc/libxfcegui4-4.6.0/ChangeLog
+  /usr/share/doc/libxfcegui4-4.6.0/INSTALL
+  /usr/share/doc/libxfcegui4-4.6.0/NEWS
+  /usr/share/doc/libxfcegui4-4.6.0/README
   /usr/share/icons/hicolor/48x48/apps/xfce-edit.png
   /usr/share/icons/hicolor/48x48/apps/xfce-filemanager.png
   /usr/share/icons/hicolor/48x48/apps/xfce-games.png
@@ -139,9 +139,9 @@ Files included in the binary packages:
   /usr/share/locale/zh_CN/LC_MESSAGES/libxfcegui4.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/libxfcegui4.mo
 
-(libxfce4kbd-private4)
+(libxfce4kbd-private5)
   /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
-  /usr/bin/cygxfce4kbd-private-4.dll
+  /usr/bin/cygxfce4kbd-private-5.dll
 
 (libxfcegui4-devel)
   /usr/include/xfce4/libxfcegui4/dialogs.h
@@ -225,8 +225,6 @@ Files included in the binary packages:
   /usr/include/xfce4/libxfce4kbd-private/xfce-shortcuts.h
   /usr/lib/libxfce4kbd-private.dll.a
   /usr/lib/libxfce4kbd-private.la
-  /usr/lib/libxfcegui4.dll.a
-  /usr/lib/libxfcegui4.la
   /usr/lib/pkgconfig/libxfce4kbd-private-1.0.pc
 
 (glade3-xfce4)
@@ -248,6 +246,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 4.6.0-1 -----
+Version bump.
 
 ----- version 4.5.99.1-1 -----
 Version bump for 4.6-rc1.
