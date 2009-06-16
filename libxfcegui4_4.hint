@@ -1,5 +1,5 @@
-category: Xfce
-requires: cygwin libatk1.0_0 libglib2.0_0 libgtk2.0_0 libICE6 libSM6 libX11_6 libintl8 libxfce4util4 libpango1.0_0 libstartup-notification1_0
+category: Gnome
+requires: cygwin libatk1.0_0 libgcc1 libglib2.0_0 libgtk2.0_0 libICE6 libSM6 libX11_6 libintl8 libxfce4util4 libpango1.0_0 libstartup-notification1_0
 external-source: libxfcegui4
 sdesc: "Xfce4 GUI library (runtime)"
 ldesc: "Xfce4 GUI library"
