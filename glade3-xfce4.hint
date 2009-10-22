@@ -1,4 +1,4 @@
-category: Gnome Devel
+category: Xfce Devel
 requires: glade3 libgcc1 libglib2.0_0 libgtk2.0_0 libxfcegui4_4
 external-source: libxfcegui4
 sdesc: "Glade-3 Xfce4 plugin"
