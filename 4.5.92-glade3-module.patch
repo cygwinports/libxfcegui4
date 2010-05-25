@@ -10,7 +10,7 @@
  
 --- origsrc/libxfcegui4-4.5.92/glade/glade-xfce4.c	2008-09-05 18:06:27.000000000 -0500
 +++ src/libxfcegui4-4.5.92/glade/glade-xfce4.c	2008-12-25 05:10:55.256125000 -0600
-@@ -29,10 +29,17 @@
+@@ -29,9 +29,16 @@
  #endif
  
  #include <gtk/gtk.h>
@@ -18,13 +18,12 @@
  
  #include <gladeui/glade.h>
  
- void
++static void
 +gotta_love_windows(null)
 +{
 +	GtkWidget *dialog = xfce_titled_dialog_new();
 +}
 +
-+void
+ void
  glade_xfce_titled_dialog_post_create(GladeWidgetAdaptor *adaptor,
                                       GObject *object, 
-                                      GladeCreateReason reason)
