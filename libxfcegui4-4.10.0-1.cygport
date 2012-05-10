@@ -6,6 +6,6 @@ PKG_NAMES="${PN}_4 ${PN}-devel"
 libxfcegui4_4_CONTENTS="etc/postinstall/ usr/bin/cygxfcegui4-4.dll usr/lib/libglade/
                         usr/share/doc/ usr/share/icons/ usr/share/locale/"
 libxfcegui4_devel_CONTENTS="usr/include/xfce4/libxfcegui4/ usr/lib/libxfcegui4.*
-                            usr/lib/pkgconfig/libxfcegui4-1.0.pc usr/share/gtk-doc/"
+                            usr/lib/pkgconfig/libxfcegui4-1.0.pc" # usr/share/gtk-doc/"
 glade3_xfce4_CONTENTS="usr/lib/glade3/ usr/share/glade3/"
 PKG_IGNORE=${glade3_xfce4_CONTENTS}
