@@ -1,5 +1,0 @@
-category: Xfce
-requires: libxfcegui4_4 libgdk_pixbuf2.0-devel libglib2.0-devel libgtk2.0-devel libICE-devel libpango1.0-devel libSM-devel libX11-devel libxfce4util-devel
-external-source: libxfcegui4
-sdesc: "Xfce4 GUI library (development)"
-ldesc: "Xfce4 GUI library"
