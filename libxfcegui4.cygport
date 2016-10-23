@@ -2,11 +2,13 @@ inherit xfce4
 
 NAME="libxfcegui4"
 VERSION=4.10.0
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="Xfce GUI library (DEPRECATED)"
 DESCRIPTION="This is the previous Xfce GUI library for packages which have yet
 to be ported to libxfce4ui (new in 4.10)."
+
+PATCH_URI="http://pkgs.fedoraproject.org/cgit/rpms/libxfcegui4.git/plain/libxfcegui4-4.10.0-no-xfce_setenv.patch?id=796136a"
 
 PKG_NAMES="${NAME}_4 ${NAME}-devel"
 libxfcegui4_4_CONTENTS="etc/postinstall/ usr/bin/cygxfcegui4-4.dll usr/lib/libglade/
